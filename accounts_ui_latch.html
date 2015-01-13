@@ -1,0 +1,25 @@
+
+
+<template name="_latchAccountLinks">
+  {{#if isPairing}}
+  <p class="latch-container">
+    <div class="loading">&nbsp;</div>
+    <span class="latch-loading">
+      Pairing account with <span class="inline-image-latch">Latch</span>
+    </span>
+  </p>
+  {{else}}
+    {{#if isPaired}}
+    <p class="latch-container">
+      <a target="_blank" href="https://latch.elevenpaths.com/">Account <b>protected</b> with <span class="inline-image-latch">Latch</span></a>
+      <a id="latch-unpair-link"> (unpair)</a>
+    </p>
+    {{else}}
+    <p class="latch-container">
+      <a id="latch-pair-link">Protect your account with <span class="inline-image-latch">Latch</span></a>
+      <a id="latch-more-info" target="_blank" href="https://latch.elevenpaths.com/"> (+info)</a>
+    </p>
+    {{/if}}
+  {{/if}}
+  {{> _loginButtonsMessages}}
+</template>
