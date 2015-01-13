@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gimco:accounts-ui-bootstrap-3-latch',
-  summary: 'Latch integration for accounts-ui package',
+  summary: 'Latch integration for ian:accounts-ui-bootstrap-3 package',
   version: '1.0.0',
   git: 'https://github.com/gimco/meteor-accounts-ui-bootstrap-3-latch'
 });
